@@ -1,0 +1,122 @@
+.nosotros_container {
+  position: relative;
+  width: 100%;
+}
+
+.nosotros_container .clock_nosotros {
+  width: 100%;
+  position: relative;
+}
+
+.nosotros_container .clock_nosotros video {
+  width: 100%;
+}
+
+.nosotros_container .text_nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  color: black;
+}
+
+.nosotros_container .text_nosotros h2:hover {
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.nosotros_container .text_nosotros p {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.nosotros_container .btn_welcome {
+  margin-top: 4rem;
+}
+
+.nosotros_container .btn_welcome .btn {
+  background-color: black;
+  color: white;
+  box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.94);
+  -webkit-box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.94);
+  -moz-box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.94);
+}
+
+.nosotros_container .btn_welcome .btn:hover {
+  background-color: transparent;
+  color: black;
+  font-weight: 900;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.94);
+  -webkit-box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.94);
+  -moz-box-shadow: 1px 2px 8px -1px rgba(0, 0, 0, 0.94);
+}
+
+@media (max-width: 1440px) {
+  .nosotros_container {
+    display: inline-block;
+  }
+  .nosotros_container .text_nosotros h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .nosotros_container .text_nosotros p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 760px) {
+  video {
+    opacity: 0.8;
+  }
+  .text_nosotros {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 650px;
+    height: 90%;
+    margin: auto;
+  }
+  .text_nosotros h2 {
+    font-size: 3rem;
+    color: black;
+    padding-bottom: 2rem;
+  }
+  .text_nosotros p {
+    font-size: 2rem;
+    font-weight: 900;
+    color: black;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .nosotros_container .text_nosotros h2 {
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+  }
+  .nosotros_container .text_nosotros p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=nosotros.css.map */

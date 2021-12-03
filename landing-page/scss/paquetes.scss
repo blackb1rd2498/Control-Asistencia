@@ -1,0 +1,73 @@
+@import "./card_open.scss";
+
+.paquetes_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    
+    h2{
+        font-size: 36px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .paquetes_info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card{
+            height: auto;
+            width: auto;
+            border-radius: 2rem;
+            justify-content: space-between;
+            .paquetes_cards_open{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .lista{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                margin-top: 2rem;
+                padding: 2rem;
+                list-style: none;
+                flex-wrap: wrap;
+
+                .lista_beneficios{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 1.5rem;
+                    padding-bottom: 1.5rem;
+                    h4{
+                        padding-bottom: 0.5rem;
+                    }
+                    img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                        span{
+                            list-style-type: upper-roman;
+                            font-size: 12px;
+                            text-align: left;
+                        }             
+                }           
+            }
+
+            @media (max-width:425px) {
+                .lista{
+                    flex-direction: column;
+                }
+            }
+            .btn_welcome{
+                margin-top: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@import "./hamb.scss";
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+
+    @media (max-width:900px) {
+        nav{
+            display: none;
+        }
+    }
+
+    .menu-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    -webkit-text-stroke: 2px black;
+                    color: transparent;                                         
+                    transition: 0.1s ease-in-out;
+                }
+            }
+        }
+        
+        nav{   
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    padding: 10px 15px;
+
+                    &:hover{
+                        font-size: 20px;
+                        border-bottom: 2px solid #000; 
+                        border-top: 2px solid #000;                                          
+                        border-radius: 8px;
+                        transition: 0.1s ease-in-out;
+                    }
+                }
+                
+                .btn_header{
+                    margin-left: 2rem;
+                }
+            }
+            
+            
+        }
+    }
+
+    @media (max-width:900px) {
+        nav{
+            display: none;
+        }    
+    }
+
+    @media (max-width:320px) {
+        .logo{
+            font-size: 0.7rem;
+        }    
+    }
+    
+    }

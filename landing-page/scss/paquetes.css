@@ -1,0 +1,190 @@
+@media (max-width: 9000px) {
+  .open-card-btn {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    -webkit-transition: all .5 ease-in-out;
+    transition: all .5 ease-in-out;
+  }
+  .open-card-btn__hamb {
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    -webkit-transition: all .5 ease-in-out;
+    transition: all .5 ease-in-out;
+  }
+  .open-card-btn__hamb::before, .open-card-btn__hamb::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    -webkit-transition: all .5 ease-in-out;
+    transition: all .5 ease-in-out;
+  }
+  .open-card-btn__hamb::before {
+    -webkit-transform: translateY(-14px);
+            transform: translateY(-14px);
+  }
+  .open-card-btn__hamb::after {
+    -webkit-transform: translateY(14px);
+            transform: translateY(14px);
+  }
+}
+
+@media (max-width: 320px) {
+  .open-card-btn__hamb {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+  }
+  .open-card-btn__hamb::before,
+  .open-card-btn__hamb::after {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+  }
+  .open-card-btn__hamb::before {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  .open-card-btn__hamb::after {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+.paquetes_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.paquetes_container h2 {
+  font-size: 36px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.paquetes_container .paquetes_info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.paquetes_container .paquetes_info .card {
+  height: auto;
+  width: auto;
+  border-radius: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.paquetes_container .paquetes_info .card .paquetes_cards_open {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.paquetes_container .paquetes_info .card .lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 2rem;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.paquetes_container .paquetes_info .card .lista .lista_beneficios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.paquetes_container .paquetes_info .card .lista .lista_beneficios h4 {
+  padding-bottom: 0.5rem;
+}
+
+.paquetes_container .paquetes_info .card .lista .lista_beneficios img {
+  width: 80px;
+  height: 80px;
+}
+
+.paquetes_container .paquetes_info .card .lista .lista_beneficios span {
+  list-style-type: upper-roman;
+  font-size: 12px;
+  text-align: left;
+}
+
+@media (max-width: 425px) {
+  .paquetes_container .paquetes_info .card .lista {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.paquetes_container .paquetes_info .card .btn_welcome {
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=paquetes.css.map */

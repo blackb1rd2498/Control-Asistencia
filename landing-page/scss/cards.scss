@@ -1,0 +1,108 @@
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1.5rem;
+    width: 100%;
+
+    .card{
+        display: flex;       
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
+        height: 400px;
+        width: 400px;
+        border: 2px solid #000;
+        border-radius: 2rem;
+        padding: 1.5rem;
+        box-shadow: 1px 2px 8px -1px rgba(0,0,0,0.54);
+        -webkit-box-shadow: 1px 2px 8px -1px rgba(0,0,0,0.54);
+        -moz-box-shadow: 1px 2px 8px -1px rgba(0,0,0,0.54);
+        transition: 0.5s ease-in-out;
+
+        &:hover{
+            border: 3px solid #000;
+            box-shadow: 1px 2px 8px -1px rgba(0,0,0,2);
+            -webkit-box-shadow: 1px 2px 8px -1px rgba(0,0,0,2);
+            -moz-box-shadow: 1px 2px 8px -1px rgba(0,0,0,2);
+            transition: 0.3s ease-in-out;
+            h3{
+                animation-name: open-line;
+                animation-duration: 5s;
+                animation-direction: reverse;                                                 
+            } 
+        }
+
+        @keyframes open-line {
+            0%{
+                left: 175px;
+                -webkit-text-stroke: 2px #000;
+                color: transparent;                         
+                border-bottom: 2px solid #000;
+            }
+            25%{
+                left: 350px;
+                -webkit-text-stroke: 2px #000;
+                color: transparent;                         
+                border-bottom: 2px solid #000;
+            }
+            50%{
+                left: 575px;
+                -webkit-text-stroke: 2px #000;
+                color: transparent;                         
+                border-bottom: 2px solid #000;
+            }
+            100%{
+                left: 700px;
+                -webkit-text-stroke: 2px #000;
+                color: transparent;                         
+                border-bottom: 2px solid #000;
+            }
+        }
+
+        h3{
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        p{
+            text-align: center;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        } 
+
+        .img_card{
+            img{
+                width: 250px;
+                height: 250px;
+            }
+
+            @media (max-width:900px) {
+                img{
+                    width: 200px;
+                    height: 200px;
+                }    
+            }
+    
+            @media (max-width:420px) {
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+    
+            @media (max-width:320px) {
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+   
+}
+
